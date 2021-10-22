@@ -46,4 +46,9 @@ changes in file B to. So essentially what this is doing is adding on top of the 
 
 Hope this helps. Also, I originally had a sql function that could connect and query into a database and used a custom function to turn it into a pandas dataframe before 
 converting it into a list to paste into excel cells. But since there are different ways of connecting to DB, I left it blank for others to customize it for their use 
-cases. Anyways hope this saves someone some time. Cheers! 
+cases.
+
+
+CopySheet.pandasCopyPaste(column_start letter of cell you want to paste into ,row_start # you want to paste into, "Name of sheet tab to copy to", panda df that you want to paste)
+
+Anyways hope this saves someone some time. Cheers! 
