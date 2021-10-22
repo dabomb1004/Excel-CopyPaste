@@ -44,8 +44,6 @@ CopySheet2.save()
 As you can see above, we are copying from X.xlsx (which is the first argument in copysheet()) and then we are pasting into C.xlsx, the file we saved all our paste
 changes in file B to. So essentially what this is doing is adding on top of the changes you already made and saved into file C. 
 
-Below are the arguments that copyPaste takes copyPaste("Name of Sheet Tab to Copy", "Column Start", Row # Start,"Column End", Row # End, "Name of Sheet Tab to Paste", "Column Start", Row # Start, "Column End", Row # End)
-
 Hope this helps. Also, I originally had a sql function that could connect and query into a database and used a custom function to turn it into a pandas dataframe before 
 converting it into a list to paste into excel cells. But since there are different ways of connecting to DB, I left it blank for others to customize it for their use 
 cases. Anyways hope this saves someone some time. Cheers! 
