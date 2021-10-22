@@ -30,6 +30,7 @@ Now say I wanted to grab other tables within a different sheet in file A and pas
 I don't have to create a new instance. I can just call copyPaste() method again: 
 
 CopySheet.copyPaste("A different tab sheet to paste to", "B", 20, "F",40,"A different tab sheet to paste to", "B", 36,"F", 51)
+
 CopySheet.save()
 
 If however, you wanted to copy and paste from different files than A and B but continue to add onto file C, you would create a new instance but make file C as the paste 
@@ -37,7 +38,8 @@ argument (2nd argument) in copysheet() object. So here is what you would do:
 
 CopySheet2 = copysheet("C://Users//Copy//Puppets//X.xlsx", "C://Users//Copy//Pastries//C.xlsx", "C://Users//Copy//Pastries//C.xlsx")
 CopySheet2.copyPaste("A different tab sheet to paste to", "B", 20, "F",40,"A different tab sheet to paste to", "B", 36,"F", 51)
-CopySheet2.save() // changes are saved 
+
+CopySheet2.save()
 
 As you can see above, we are copying from X.xlsx (which is the first argument in copysheet()) and then we are pasting into C.xlsx, the file we saved all our paste
 changes in file B to. So essentially what this is doing is adding on top of the changes you already made and saved into file C. 
