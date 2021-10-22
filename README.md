@@ -34,7 +34,7 @@ CopySheet.copyPaste("A different tab sheet to paste to", "B", 20, "F",40,"A diff
 CopySheet.save()
 
 If however, you wanted to copy and paste from different files than A and B but continue to add onto file C, you would create a new instance but make file C as the paste 
-argument (2nd argument) in copysheet() object. So here is what you would do: 
+argument (2nd argument in copysheet() object). So here is what you would do: 
 
 CopySheet2 = copysheet("C://Users//Copy//Puppets//X.xlsx", "C://Users//Copy//Pastries//C.xlsx", "C://Users//Copy//Pastries//C.xlsx")
 CopySheet2.copyPaste("A different tab sheet to paste to", "B", 20, "F",40,"A different tab sheet to paste to", "B", 36,"F", 51)
